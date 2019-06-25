@@ -8,49 +8,43 @@
     <meta http-equiv="cache-control" content="no-cache,must-ridate">
     <meta http-equiv="expires" content="0">
 
-    <title>牧轩网盘</title>
+    <title>ScreenToGif</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="../../../../css/site.css" />
 </head>
 
 <body>
     <header>
-        <h2>牧轩网盘</h2>
+        <h2>ScreenToGif</h2>
         <div class="alert alert-primary" role="alert">
-            本网盘程序部署在Github，纯静态页面！
+            This tool allows you to record a selected area of your screen, live feed from your webcam or live drawings
+            from a sketchboard. Afterwards, you can edit and save the animation as a gif or video.
         </div>
     </header>
-
     <section>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>编号</th>
-                    <th>应用</th>
-                    <th>说明</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td><a href="/html/2019/06/25/index.html">ScreenToGif</a></td>
-                    <td>支持将录屏转换为Gif的开源软件</td>
-                </tr>
-            </tbody>
-        </table>
+        <ul class="breadcrumb">
+            <li><a href="/">首页</a></li>
+            <li><a href="/html/2019/06/25/index.html">ScreenToGif</a></li>
+        </ul>
     </section>
-
-    <footer style="text-align:center;padding:2em;">
-        <p><span id="curTitle"></span>：<a href="" id="curUrl">https://pan.lucoder.com</a> . <span id="year"></span></p>
-        <p><a href="http://www.beian.miit.gov.cn/">豫ICP备16017737号-2</a></p>
-    </footer>
+    <section>
+        <div class="homepage">
+            HomePage : <a href="https://www.screentogif.com">https://www.screentogif.com</a>
+        </div>
+        <div class="homepage">
+            Source : <a href="https://github.com/NickeManarin/ScreenToGif">GitHub</a>
+        </div>
+        <div class="download">
+            Download : <a href="https://www.lanzous.com/i4pp0kj">蓝奏云</a>|<a href="">官网</a>|<a
+                href="https://github.com/NickeManarin/ScreenToGif/releases">Github</a>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         window.onload = function () {
-            document.getElementById("year").innerHTML = (new Date()).getFullYear();
             document.getElementById("curTitle").innerText = document.getElementsByTagName("title")[0].innerText;
             document.getElementById("curUrl").innerText = location.href;
             document.getElementById("curUrl").setAttribute("href", location.href);
